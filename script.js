@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         li.setAttribute('data-id', task.id);
         li.innerHTML = `
             <span>${task.text}</span>
-            <button class="delete-btn bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 ml-60 ">Delete</button>
+            <button class="delete-btn bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 ml-50 ">Delete</button>
         `;
         list.appendChild(li);
 
@@ -46,3 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
     }
 });
+
